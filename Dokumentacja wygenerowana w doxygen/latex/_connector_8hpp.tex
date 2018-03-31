@@ -1,0 +1,117 @@
+\hypertarget{_connector_8hpp}{\section{Dokumentacja pliku C\+:/\+Users/\+Piotrek/\+Desktop/\+Szachy cpp/\+Connector.hpp}
+\label{_connector_8hpp}\index{C\+:/\+Users/\+Piotrek/\+Desktop/\+Szachy cpp/\+Connector.\+hpp@{C\+:/\+Users/\+Piotrek/\+Desktop/\+Szachy cpp/\+Connector.\+hpp}}
+}
+
+
+Ruchy komputera.  
+
+
+{\ttfamily \#include $<$windows.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_connector_8hpp_a1555aee1363be575daa7b67c16ec34d3}{Connect\+To\+Engine} (char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Polacz sie z silnikiem Procedura umozliwia polaczenie sie z silnikiem odpowiedzialnym za generowanie ruchow komputera podczas rozgrywki. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{_connector_8hpp_a979d4820136b3e35778d479aa655c1d1}{get\+Next\+Move} (std\+::string position)
+\begin{DoxyCompactList}\small\item\em Pobierz ruch Funkcja sprawdza ruchy ktore moze wykonac komputer. \end{DoxyCompactList}\item 
+void \hyperlink{_connector_8hpp_a95b99b2dee886d640a2c0f47a0e623ab}{Close\+Connection} ()
+\begin{DoxyCompactList}\small\item\em Zamknij połączenie Procedura zamyka polaczenie z silnikiem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Zmienne}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_connector_8hpp_a59a50c2e184af277902f64aba40a7c52}{S\+T\+A\+R\+T\+U\+P\+I\+N\+F\+O \hyperlink{_connector_8hpp_a59a50c2e184af277902f64aba40a7c52}{sti} = \{0\}}\label{_connector_8hpp_a59a50c2e184af277902f64aba40a7c52}
+
+\begin{DoxyCompactList}\small\item\em Start up info Okresla stacje okna, pulpit, standardowe uchwyty i wyglad glownego okna procesu w czasie tworzenia. \end{DoxyCompactList}\item 
+\hypertarget{_connector_8hpp_a3a6fc59c5ce532a43ad212428ef5ecd8}{S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S \hyperlink{_connector_8hpp_a3a6fc59c5ce532a43ad212428ef5ecd8}{sats} = \{0\}}\label{_connector_8hpp_a3a6fc59c5ce532a43ad212428ef5ecd8}
+
+\begin{DoxyCompactList}\small\item\em ochrona atrybutow struktura S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S zawiera deskryptor bezpieczenstwa dla obiektu i okresla, czy uchwyt uzyskany przez okreslenie tej struktury jest dziedziczony. Ta struktura zapewnia ustawienia zabezpieczen dla obiektow utworzonych za pomocą roznych funkcji, takich jak Create\+File, Create\+Pipe, Create\+Process \end{DoxyCompactList}\item 
+\hypertarget{_connector_8hpp_a9a8e2bf7c56ae454b6a897d683b1d73d}{P\+R\+O\+C\+E\+S\+S\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+N \hyperlink{_connector_8hpp_a9a8e2bf7c56ae454b6a897d683b1d73d}{pi} = \{0\}}\label{_connector_8hpp_a9a8e2bf7c56ae454b6a897d683b1d73d}
+
+\begin{DoxyCompactList}\small\item\em Process information Zawiera informacje o nowo utworzonym procesie i jego glownym watku. \end{DoxyCompactList}\item 
+\hypertarget{_connector_8hpp_a7a7d1c568f3e9b7f01646119cf8cef9c}{H\+A\+N\+D\+L\+E \hyperlink{_connector_8hpp_a7a7d1c568f3e9b7f01646119cf8cef9c}{pipin\+\_\+w}}\label{_connector_8hpp_a7a7d1c568f3e9b7f01646119cf8cef9c}
+
+\begin{DoxyCompactList}\small\item\em Handle Deklaracja uchwytow do obiektu. \end{DoxyCompactList}\item 
+\hypertarget{_connector_8hpp_a91b35dc0c2b25b6f7b53480ef7b55f65}{H\+A\+N\+D\+L\+E {\bfseries pipin\+\_\+r}}\label{_connector_8hpp_a91b35dc0c2b25b6f7b53480ef7b55f65}
+
+\item 
+\hypertarget{_connector_8hpp_ae56304de67ad2c1a022c0683b33331d1}{H\+A\+N\+D\+L\+E {\bfseries pipout\+\_\+w}}\label{_connector_8hpp_ae56304de67ad2c1a022c0683b33331d1}
+
+\item 
+\hypertarget{_connector_8hpp_ad6f77f02d43aea28cbf23f25ec683f41}{H\+A\+N\+D\+L\+E {\bfseries pipout\+\_\+r}}\label{_connector_8hpp_ad6f77f02d43aea28cbf23f25ec683f41}
+
+\item 
+\hypertarget{_connector_8hpp_a79fade5eb2d432b4f9c207be472bc931}{B\+Y\+T\+E \hyperlink{_connector_8hpp_a79fade5eb2d432b4f9c207be472bc931}{buffer} \mbox{[}2048\mbox{]}}\label{_connector_8hpp_a79fade5eb2d432b4f9c207be472bc931}
+
+\begin{DoxyCompactList}\small\item\em Byte Deklaracja bufora. \end{DoxyCompactList}\item 
+\hypertarget{_connector_8hpp_a398955523fba86586278d5008f70a1a4}{D\+W\+O\+R\+D \hyperlink{_connector_8hpp_a398955523fba86586278d5008f70a1a4}{writ}}\label{_connector_8hpp_a398955523fba86586278d5008f70a1a4}
+
+\begin{DoxyCompactList}\small\item\em Dword Deklaracja zmiennych typu D\+W\+O\+R\+D. \end{DoxyCompactList}\item 
+\hypertarget{_connector_8hpp_a609f7aa0c7a2a059c435cc605584c90e}{D\+W\+O\+R\+D {\bfseries excode}}\label{_connector_8hpp_a609f7aa0c7a2a059c435cc605584c90e}
+
+\item 
+\hypertarget{_connector_8hpp_a8c7659aa4473fb28708802fb35b9eef7}{D\+W\+O\+R\+D {\bfseries read}}\label{_connector_8hpp_a8c7659aa4473fb28708802fb35b9eef7}
+
+\item 
+\hypertarget{_connector_8hpp_a0fe3175f0a08344a0ab395f42c6693ad}{D\+W\+O\+R\+D {\bfseries available}}\label{_connector_8hpp_a0fe3175f0a08344a0ab395f42c6693ad}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Ruchy komputera. 
+
+Plik zawiera zmienne i funkcje odpowiedzialne za wykonywanie ruchow przez komputer. 
+
+\subsection{Dokumentacja funkcji}
+\hypertarget{_connector_8hpp_a95b99b2dee886d640a2c0f47a0e623ab}{\index{Connector.\+hpp@{Connector.\+hpp}!Close\+Connection@{Close\+Connection}}
+\index{Close\+Connection@{Close\+Connection}!Connector.\+hpp@{Connector.\+hpp}}
+\subsubsection[{Close\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}void Close\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_connector_8hpp_a95b99b2dee886d640a2c0f47a0e623ab}
+
+
+Zamknij połączenie Procedura zamyka polaczenie z silnikiem. 
+
+\begin{DoxyReturn}{Zwraca}
+Procedura niczego nie zwraca 
+\end{DoxyReturn}
+\hypertarget{_connector_8hpp_a1555aee1363be575daa7b67c16ec34d3}{\index{Connector.\+hpp@{Connector.\+hpp}!Connect\+To\+Engine@{Connect\+To\+Engine}}
+\index{Connect\+To\+Engine@{Connect\+To\+Engine}!Connector.\+hpp@{Connector.\+hpp}}
+\subsubsection[{Connect\+To\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}void Connect\+To\+Engine (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{_connector_8hpp_a1555aee1363be575daa7b67c16ec34d3}
+
+
+Polacz sie z silnikiem Procedura umozliwia polaczenie sie z silnikiem odpowiedzialnym za generowanie ruchow komputera podczas rozgrywki. 
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em jako} & parametr pobiera wskaznik typu char \\
+\hline
+\end{DoxyParams}
+\hypertarget{_connector_8hpp_a979d4820136b3e35778d479aa655c1d1}{\index{Connector.\+hpp@{Connector.\+hpp}!get\+Next\+Move@{get\+Next\+Move}}
+\index{get\+Next\+Move@{get\+Next\+Move}!Connector.\+hpp@{Connector.\+hpp}}
+\subsubsection[{get\+Next\+Move}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string get\+Next\+Move (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{position}
+\end{DoxyParamCaption}
+)}}\label{_connector_8hpp_a979d4820136b3e35778d479aa655c1d1}
+
+
+Pobierz ruch Funkcja sprawdza ruchy ktore moze wykonac komputer. 
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em jako} & parametr pobiera zmienną typu string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca najlepszy mozliwy ruch komputera 
+\end{DoxyReturn}

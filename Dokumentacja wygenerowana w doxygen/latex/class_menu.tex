@@ -1,0 +1,182 @@
+\hypertarget{class_menu}{\section{Dokumentacja klasy Menu}
+\label{class_menu}\index{Menu@{Menu}}
+}
+
+
+Definicja klasy \hyperlink{class_menu}{Menu}.  
+
+
+
+
+{\ttfamily \#include $<$Klasy.\+hpp$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_menu_a8caa6100506d4b8e0d782e550dbc470e}{Menu} (float width, float height)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_menu}{Menu} Konstruktor klasy \hyperlink{class_menu}{Menu}. Tworzy menu glowne. \end{DoxyCompactList}\item 
+void \hyperlink{class_menu_a1b1cedd490fafb85770274b924431bbd}{instrukcja} (float width, float height)
+\begin{DoxyCompactList}\small\item\em Instrukcja Deklaracja metody o nazwie \hyperlink{class_menu_a1b1cedd490fafb85770274b924431bbd}{instrukcja()} \end{DoxyCompactList}\item 
+\hyperlink{class_menu_a831387f51358cfb88cd018e1777bc980}{$\sim$\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \hyperlink{class_menu}{Menu} Deklaracja destruktora klasy menu. \end{DoxyCompactList}\item 
+void \hyperlink{class_menu_aff074d199701078a4c33e5b6287b9b5b}{rysuj} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em rysuj Deklaracja metody o nazwie \hyperlink{class_menu_aff074d199701078a4c33e5b6287b9b5b}{rysuj()} \end{DoxyCompactList}\item 
+void \hyperlink{class_menu_afca82431acd35bfe14e7204191493cc9}{ruch\+\_\+gora} ()
+\begin{DoxyCompactList}\small\item\em ruch w gore Deklaracja metody o nazwie \hyperlink{class_menu_afca82431acd35bfe14e7204191493cc9}{ruch\+\_\+gora()} \end{DoxyCompactList}\item 
+void \hyperlink{class_menu_a17c3803afc9b0d6f64f6d93016aff965}{ruch\+\_\+dol} ()
+\begin{DoxyCompactList}\small\item\em ruch w dol Deklaracja metody o nazwie \hyperlink{class_menu_a1b1cedd490fafb85770274b924431bbd}{instrukcja()} \end{DoxyCompactList}\item 
+int \hyperlink{class_menu_ae0c66f70b505396bb06e548d8f41eed7}{klawisz\+\_\+zostal\+\_\+wcisniety} ()
+\begin{DoxyCompactList}\small\item\em wcisniecie klawisza Deklaracja metody o nazwie \hyperlink{class_menu_ae0c66f70b505396bb06e548d8f41eed7}{klawisz\+\_\+zostal\+\_\+wcisniety()} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \hyperlink{class_menu}{Menu}. 
+
+Klasa sluzy do obslugi menu, wewnatrz znajduja sie metody oraz pola umozliwiajace obsluge menu 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_menu_a8caa6100506d4b8e0d782e550dbc470e}{\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection[{Menu}]{\setlength{\rightskip}{0pt plus 5cm}Menu\+::\+Menu (
+\begin{DoxyParamCaption}
+\item[{float}]{width, }
+\item[{float}]{height}
+\end{DoxyParamCaption}
+)}}\label{class_menu_a8caa6100506d4b8e0d782e550dbc470e}
+
+
+\hyperlink{class_menu}{Menu} Konstruktor klasy \hyperlink{class_menu}{Menu}. Tworzy menu glowne. 
+
+\hyperlink{class_menu}{Menu} Konstruktor klasy \hyperlink{class_menu}{Menu}. Tworzy w oknie o przekazanej przez parametry szerokosci i wysokosci menu glowne. Najpierw laduje z pliku czcionke jaka maja byc pisane poszczegolne opcje menu. Nastepnie wybiera kolor jakim maja byc rysowane. Pierwsza opcja w menu jest rysowana kolorem czerwonym, natomiast pozostale czarnym, ma to umozliwic poruszanie sie za pomoca klawiatury po menu glownym. Nastepnie jest podawany rozmiar czcionki, nazwa opcji oraz jej umieszczenie w odpowiednim miejscu na ekranie. Na sam koniec metoda przypisuje zmiennej prywatnej zaznaczenie wartosc 0.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em width} & -\/ szerokosc okna \\
+\hline
+\mbox{\tt in}  & {\em height} & -\/ wysokosc okna\\
+\hline
+\mbox{\tt in}  & {\em width} & -\/ szerokosc okna \\
+\hline
+\mbox{\tt in}  & {\em height} & -\/ wysokosc okna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Niczego nie zwraca 
+\end{DoxyReturn}
+\hypertarget{class_menu_a831387f51358cfb88cd018e1777bc980}{\index{Menu@{Menu}!````~Menu@{$\sim$\+Menu}}
+\index{````~Menu@{$\sim$\+Menu}!Menu@{Menu}}
+\subsubsection[{$\sim$\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}Menu\+::$\sim$\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_menu_a831387f51358cfb88cd018e1777bc980}
+
+
+Destruktor klasy \hyperlink{class_menu}{Menu} Deklaracja destruktora klasy menu. 
+
+$\sim$\+Menu Destruktor klasy menu. 
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_menu_a1b1cedd490fafb85770274b924431bbd}{\index{Menu@{Menu}!instrukcja@{instrukcja}}
+\index{instrukcja@{instrukcja}!Menu@{Menu}}
+\subsubsection[{instrukcja}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+::instrukcja (
+\begin{DoxyParamCaption}
+\item[{float}]{width, }
+\item[{float}]{height}
+\end{DoxyParamCaption}
+)}}\label{class_menu_a1b1cedd490fafb85770274b924431bbd}
+
+
+Instrukcja Deklaracja metody o nazwie \hyperlink{class_menu_a1b1cedd490fafb85770274b924431bbd}{instrukcja()} 
+
+Instrukcja Metoda klasy \hyperlink{class_menu}{Menu}. Tworzy w oknie o przekazanej przez parametry szerokosci i wysokosci instrukcje poruszania sie bierek. Najpierw laduje z pliku czcionke jaka maja byc pisane opisy poruszania sie poszczegolnych bierek. Nastepnie wybiera kolor jakim maja byc rysowane. Cala instrukcja jest rysowana kolorem czarnym. Nastepnie jest podawany rozmiar czcionki, nazwa opcji oraz jej umieszczenie w odpowiednim miejscu na ekranie.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em width} & -\/ szerokosc okna \\
+\hline
+\mbox{\tt in}  & {\em height} & -\/ wysokosc okna\\
+\hline
+\mbox{\tt in}  & {\em width} & -\/ szerokosc okna \\
+\hline
+\mbox{\tt in}  & {\em height} & -\/ wysokosc okna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Metoda niczego nie zwraca 
+\end{DoxyReturn}
+\hypertarget{class_menu_ae0c66f70b505396bb06e548d8f41eed7}{\index{Menu@{Menu}!klawisz\+\_\+zostal\+\_\+wcisniety@{klawisz\+\_\+zostal\+\_\+wcisniety}}
+\index{klawisz\+\_\+zostal\+\_\+wcisniety@{klawisz\+\_\+zostal\+\_\+wcisniety}!Menu@{Menu}}
+\subsubsection[{klawisz\+\_\+zostal\+\_\+wcisniety}]{\setlength{\rightskip}{0pt plus 5cm}int Menu\+::klawisz\+\_\+zostal\+\_\+wcisniety (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_menu_ae0c66f70b505396bb06e548d8f41eed7}
+
+
+wcisniecie klawisza Deklaracja metody o nazwie \hyperlink{class_menu_ae0c66f70b505396bb06e548d8f41eed7}{klawisz\+\_\+zostal\+\_\+wcisniety()} 
+
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca zmienna o nazwie zaznaczenie, ktora mowi nam ktora opcje wybral uzytkownik w menu glownym 
+\end{DoxyReturn}
+\hypertarget{class_menu_a17c3803afc9b0d6f64f6d93016aff965}{\index{Menu@{Menu}!ruch\+\_\+dol@{ruch\+\_\+dol}}
+\index{ruch\+\_\+dol@{ruch\+\_\+dol}!Menu@{Menu}}
+\subsubsection[{ruch\+\_\+dol}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+::ruch\+\_\+dol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_menu_a17c3803afc9b0d6f64f6d93016aff965}
+
+
+ruch w dol Deklaracja metody o nazwie \hyperlink{class_menu_a1b1cedd490fafb85770274b924431bbd}{instrukcja()} 
+
+Poruszanie sie na dol po menu W metodzie sprawdzany jest warunek czy wartosc zmiennej zaznaczenie zwiekszonej o jeden jest mniejsza od stalej M\+A\+X\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+I\+T\+E\+M\+S, jezeli tak jest to do tablicy menu jest przekazywana ta zmienna i odpowiednia opcja w menu jest kolorowana na kolor czarny, nastepnie nastepuje inkrementacja zmiennej zaznaczenie oraz przekazanie jej na nowo do tablicy menu w celu zmiany koloru odpowiedniej opcji na czerwony.
+
+\begin{DoxyReturn}{Zwraca}
+Metoda niczego nie zwraca 
+\end{DoxyReturn}
+\hypertarget{class_menu_afca82431acd35bfe14e7204191493cc9}{\index{Menu@{Menu}!ruch\+\_\+gora@{ruch\+\_\+gora}}
+\index{ruch\+\_\+gora@{ruch\+\_\+gora}!Menu@{Menu}}
+\subsubsection[{ruch\+\_\+gora}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+::ruch\+\_\+gora (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_menu_afca82431acd35bfe14e7204191493cc9}
+
+
+ruch w gore Deklaracja metody o nazwie \hyperlink{class_menu_afca82431acd35bfe14e7204191493cc9}{ruch\+\_\+gora()} 
+
+Poruszanie sie do gory po menu W metodzie sprawdzany jest warunek czy wartosc zmiennej zaznaczenie zmniejszonej o jeden jest wieksza badz rowna zero, jezeli tak jest to do tablicy menu jest przekazywana ta zmienna i odpowiednia opcja w menu jest kolorowana na kolor czarny, nastepnie nastepuje dekrementacja zmiennej zaznaczenie oraz przekazanie jej na nowo do tablicy menu w celu zmiany koloru odpowiedniej opcji na czerwony.
+
+\begin{DoxyReturn}{Zwraca}
+Metoda niczego nie zwraca 
+\end{DoxyReturn}
+\hypertarget{class_menu_aff074d199701078a4c33e5b6287b9b5b}{\index{Menu@{Menu}!rysuj@{rysuj}}
+\index{rysuj@{rysuj}!Menu@{Menu}}
+\subsubsection[{rysuj}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+::rysuj (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Window \&}]{window}
+\end{DoxyParamCaption}
+)}}\label{class_menu_aff074d199701078a4c33e5b6287b9b5b}
+
+
+rysuj Deklaracja metody o nazwie \hyperlink{class_menu_aff074d199701078a4c33e5b6287b9b5b}{rysuj()} 
+
+Rysowanie menu. W metodzie wykorzystywana jest petla, oraz metoda draw dla obiektu window sluzaca do rysowania menu glownego badz instrukcji w zaleznosci od miejsca w ktorym zostanie wywolana.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em jako} & parametr pobiera obiekt typu Render\+Window\\
+\hline
+\mbox{\tt in}  & {\em jako} & parametr pobiera obiekt typu Render\+Window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Metoda niczego nie zwraca 
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Piotrek/\+Desktop/\+Szachy cpp/\hyperlink{_klasy_8hpp}{Klasy.\+hpp}\item 
+C\+:/\+Users/\+Piotrek/\+Desktop/\+Szachy cpp/\hyperlink{_klasy_8cpp}{Klasy.\+cpp}\end{DoxyCompactItemize}

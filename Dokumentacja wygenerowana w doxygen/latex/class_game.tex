@@ -1,0 +1,145 @@
+\hypertarget{class_game}{\section{Dokumentacja klasy Game}
+\label{class_game}\index{Game@{Game}}
+}
+
+
+Definicja klasy \hyperlink{class_game}{Game}.  
+
+
+
+
+{\ttfamily \#include $<$Klasy.\+hpp$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_game_a6d7165691b0db379166a5e475a8123cf}{to\+Chess\+Note} (Vector2f p)
+\begin{DoxyCompactList}\small\item\em Obliczanie pozycji bierek Deklaracja metody to\+Chees\+Note() \end{DoxyCompactList}\item 
+Vector2f \hyperlink{class_game_afce31e4c33ae6dc68af4059259befd50}{to\+Coord} (char a, char b)
+\begin{DoxyCompactList}\small\item\em to\+Coord Deklaracja metody o nazwie to\+Coord \end{DoxyCompactList}\item 
+void \hyperlink{class_game_a513f58e893062649e01fb4233c85d563}{move} (string str)
+\begin{DoxyCompactList}\small\item\em Ruch Deklaracja metody o nazwie \hyperlink{class_game_a513f58e893062649e01fb4233c85d563}{move()} \end{DoxyCompactList}\item 
+void \hyperlink{class_game_a301b8329fd8738a7f42a2ed354a97648}{wczytaj\+\_\+pozycje} ()
+\begin{DoxyCompactList}\small\item\em Wczytywanie pozycji Deklaracja metody o nazwie \hyperlink{class_game_a301b8329fd8738a7f42a2ed354a97648}{wczytaj\+\_\+pozycje()} \end{DoxyCompactList}\item 
+void \hyperlink{class_game_adb42d5bef2d3268680d84adcc74b3b0a}{gra} ()
+\begin{DoxyCompactList}\small\item\em Gra Deklaracja metody o nazwie \hyperlink{class_game_adb42d5bef2d3268680d84adcc74b3b0a}{gra()} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \hyperlink{class_game}{Game}. 
+
+Klasa sluzy do obslugi gry, wewnatrz znajduja sie metody umozliwiajace obsluge gry, w tym najwazniejsza z nich o nazwie \hyperlink{class_game_adb42d5bef2d3268680d84adcc74b3b0a}{gra()} w niej znajduje sie petla glowna gry. 
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_game_adb42d5bef2d3268680d84adcc74b3b0a}{\index{Game@{Game}!gra@{gra}}
+\index{gra@{gra}!Game@{Game}}
+\subsubsection[{gra}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::gra (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_game_adb42d5bef2d3268680d84adcc74b3b0a}
+
+
+Gra Deklaracja metody o nazwie \hyperlink{class_game_adb42d5bef2d3268680d84adcc74b3b0a}{gra()} 
+
+Gra Metoda klasy \hyperlink{class_game}{Game}. Na poczatku renderowane jest okno w ktorym toczyc sie bedzie gra, oraz nastepuje polaczenie z silnikiem, w ktorym wyliczane sa ruchy komputera. Nastepnie tworzone sa dwie zmienne typu Texture do ktorych ladowane sa obrazki figur oraz szachownicy. Za pomoca petli for oraz funkcji \hyperlink{class_game_a301b8329fd8738a7f42a2ed354a97648}{wczytaj\+\_\+pozycje()} ustawiane sa bierki na szachownicy. Nastepnie tworzone sa odpowiednie zmienne ktore zostana wykorzystane w petli glownej gry to jest zmienna typu bool sprawdzajaca czy jest ruch, zmienne pomocnicze typu float okreslajace rozmiar planszy oraz dwa obiekty typu Vector2f oznaczajace stara pozycje bierki i nowa pozycje bierki. Dopoki okno jest otwarte tworzone jest zdarzenie odpowiedzialne za interakcje z oknem. Na poczatku sprawdzane jest zdarzenie, czy uzytkownik nie chce zamknac okna, jezeli tak to okno zostaje zamkniete. Nastepnie sprawdzane jest czy uzytkownik nie wcisnal przycisku Backspace, jesli tak to ruch jest cofany. Jezeli gracz wcisnal i przytrzymal lewy przycisk myszy na polu w ktorym znajduje sie bierka to moze ja przemiescic w inne miejsce, natomiast jezeli lewy przycisk myszy zostanie puszczony, to bierka zostaje upuszczona na odpowiednie miejsce na szachownicy. Mozliwy jest tryb gry gracz vs gracz, gracz vs komputer oraz komputer vs komputer. W ostatnim przypadku wystarczy wciskac klawisz spacji, natomiast jezeli chcemy osobiscie zagrac z komputerem to ruchy komputera wywolujemy rowniez naciskajac spacje. Na samym koncu metody rysowane sa bierki oraz szachownica. Zamykane jest polaczenie z silnikiem odpowiedzialnym za wykonywanie ruchu przez komputer.
+
+\begin{DoxyReturn}{Zwraca}
+Metoda niczego nie zwraca 
+\end{DoxyReturn}
+\hypertarget{class_game_a513f58e893062649e01fb4233c85d563}{\index{Game@{Game}!move@{move}}
+\index{move@{move}!Game@{Game}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::move (
+\begin{DoxyParamCaption}
+\item[{string}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_game_a513f58e893062649e01fb4233c85d563}
+
+
+Ruch Deklaracja metody o nazwie \hyperlink{class_game_a513f58e893062649e01fb4233c85d563}{move()} 
+
+Ruch Metoda klasy \hyperlink{class_game}{Game}. Na poczatku tworzone sa dwa obiekty typu Vector2f w ktorych zapamietywana jest stara i nowa pozycja bierki. Nastepnie tworzona jest petla for w ktorej sprawdzany jest warunek czy aktualna pozycja kazdej bierki jest rowna nowej pozycji. Jezeli tak jest to kazda bierka jest ustawiona na odpowiedniej pozycji. Analogiczna petla for oraz warunek jest stworzony dla starej pozycji. Nastepnie sprawdzane sa warunki czy aby krol nie moze wykonac ruchu, jezeli tak jest wtedy szukane sa nowe pola na ktore krol moze sie poruszyc.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em jako} & parametr pobiera zmienna typu string o nazwie str\\
+\hline
+\mbox{\tt in}  & {\em Metoda} & przyjmuje jako parametr zmienna typu string o nazwie str \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Metoda niczego nie zwraca 
+\end{DoxyReturn}
+\hypertarget{class_game_a6d7165691b0db379166a5e475a8123cf}{\index{Game@{Game}!to\+Chess\+Note@{to\+Chess\+Note}}
+\index{to\+Chess\+Note@{to\+Chess\+Note}!Game@{Game}}
+\subsubsection[{to\+Chess\+Note}]{\setlength{\rightskip}{0pt plus 5cm}string Game\+::to\+Chess\+Note (
+\begin{DoxyParamCaption}
+\item[{Vector2f}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_game_a6d7165691b0db379166a5e475a8123cf}
+
+
+Obliczanie pozycji bierek Deklaracja metody to\+Chees\+Note() 
+
+to\+Chees\+Note Metoda klasy \hyperlink{class_game}{Game}. Jest wykorzystywana w funkcji \hyperlink{class_game_adb42d5bef2d3268680d84adcc74b3b0a}{gra()} w celu wyliczenia sumy starej i nowej pozycji bierki po wykonaniu ruchu
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em jako} & parametr pobiera obiekt typu Vector2f\\
+\hline
+\mbox{\tt in}  & {\em Metoda} & przyjmuje jako parametr obiekt typu Vector2f o nazwie p \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Metoda zwraca zmienna typu string 
+\end{DoxyReturn}
+\hypertarget{class_game_afce31e4c33ae6dc68af4059259befd50}{\index{Game@{Game}!to\+Coord@{to\+Coord}}
+\index{to\+Coord@{to\+Coord}!Game@{Game}}
+\subsubsection[{to\+Coord}]{\setlength{\rightskip}{0pt plus 5cm}Vector2f Game\+::to\+Coord (
+\begin{DoxyParamCaption}
+\item[{char}]{a, }
+\item[{char}]{b}
+\end{DoxyParamCaption}
+)}}\label{class_game_afce31e4c33ae6dc68af4059259befd50}
+
+
+to\+Coord Deklaracja metody o nazwie to\+Coord 
+
+to\+Coord Metoda klasy \hyperlink{class_game}{Game}. Jest wykorzystywana w funkcji \hyperlink{class_game_adb42d5bef2d3268680d84adcc74b3b0a}{gra()} oraz w funkcji \hyperlink{class_game_a513f58e893062649e01fb4233c85d563}{move()} w celu zapamietania starej i nowej pozycji bierki po wykonaniu ruchu przez komputer
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em jako} & pierwszy parametr pobiera zmienna typu char o nazwie a \\
+\hline
+\mbox{\tt in}  & {\em jako} & drugi parametr pobiera zmienna typu char o nazwie b\\
+\hline
+\mbox{\tt in}  & {\em Metoda} & przyjmuje jako parametr zmienna typu char o nazwie a \\
+\hline
+\mbox{\tt in}  & {\em Metoda} & przyjmuje jako parametr zmienna typu char o nazwie b \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Metoda zwraca obiekt typu Vector2f 
+\end{DoxyReturn}
+\hypertarget{class_game_a301b8329fd8738a7f42a2ed354a97648}{\index{Game@{Game}!wczytaj\+\_\+pozycje@{wczytaj\+\_\+pozycje}}
+\index{wczytaj\+\_\+pozycje@{wczytaj\+\_\+pozycje}!Game@{Game}}
+\subsubsection[{wczytaj\+\_\+pozycje}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::wczytaj\+\_\+pozycje (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_game_a301b8329fd8738a7f42a2ed354a97648}
+
+
+Wczytywanie pozycji Deklaracja metody o nazwie \hyperlink{class_game_a301b8329fd8738a7f42a2ed354a97648}{wczytaj\+\_\+pozycje()} 
+
+wczytywanie pozycji Metoda klasy \hyperlink{class_game}{Game}, sluzy do wczytania pozycji poszczegolnych bierek na szachownicy, tworzone sa dwie petle for w ktorych nastepuja obliczenia sluzace do ustawienia pozycji kazdej bierki.
+
+\begin{DoxyReturn}{Zwraca}
+Metoda niczego nie zwraca 
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Piotrek/\+Desktop/\+Szachy cpp/\hyperlink{_klasy_8hpp}{Klasy.\+hpp}\item 
+C\+:/\+Users/\+Piotrek/\+Desktop/\+Szachy cpp/\hyperlink{_klasy_8cpp}{Klasy.\+cpp}\end{DoxyCompactItemize}

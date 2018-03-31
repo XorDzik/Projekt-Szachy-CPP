@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Szachy cpp: Plik źródłowy C:/Users/Piotrek/Desktop/Szachy cpp/Connector.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Szachy cpp
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_7e47f7e7b01e8e4f6b596578e3725339.html">Piotrek</a></li><li class="navelem"><a class="el" href="dir_ac7059d2d649b8a800835532bbc8e779.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_49732de986b036331bbaa01113819731.html">Szachy cpp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Connector.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_connector_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CONNECTOR_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define CONNECTOR_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_connector_8hpp.html#a59a50c2e184af277902f64aba40a7c52">   22</a></span>&#160;STARTUPINFO <a class="code" href="_connector_8hpp.html#a59a50c2e184af277902f64aba40a7c52">sti</a> = {0};</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="_connector_8hpp.html#a3a6fc59c5ce532a43ad212428ef5ecd8">   30</a></span>&#160;SECURITY_ATTRIBUTES <a class="code" href="_connector_8hpp.html#a3a6fc59c5ce532a43ad212428ef5ecd8">sats</a> = {0};</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="_connector_8hpp.html#a9a8e2bf7c56ae454b6a897d683b1d73d">   36</a></span>&#160;PROCESS_INFORMATION <a class="code" href="_connector_8hpp.html#a9a8e2bf7c56ae454b6a897d683b1d73d">pi</a> = {0};</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="_connector_8hpp.html#a7a7d1c568f3e9b7f01646119cf8cef9c">   42</a></span>&#160;HANDLE <a class="code" href="_connector_8hpp.html#a7a7d1c568f3e9b7f01646119cf8cef9c">pipin_w</a>, pipin_r, pipout_w, pipout_r;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="_connector_8hpp.html#a79fade5eb2d432b4f9c207be472bc931">   48</a></span>&#160;BYTE <a class="code" href="_connector_8hpp.html#a79fade5eb2d432b4f9c207be472bc931">buffer</a>[2048];</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="_connector_8hpp.html#a398955523fba86586278d5008f70a1a4">   54</a></span>&#160;DWORD <a class="code" href="_connector_8hpp.html#a398955523fba86586278d5008f70a1a4">writ</a>, excode, read, available;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="_connector_8hpp.html#a1555aee1363be575daa7b67c16ec34d3">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_connector_8hpp.html#a1555aee1363be575daa7b67c16ec34d3">ConnectToEngine</a>(<span class="keywordtype">char</span>* path)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   <a class="code" href="_connector_8hpp.html#a7a7d1c568f3e9b7f01646119cf8cef9c">pipin_w</a> = pipin_r = pipout_w = pipout_r = NULL;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;   <a class="code" href="_connector_8hpp.html#a3a6fc59c5ce532a43ad212428ef5ecd8">sats</a>.nLength = <span class="keyword">sizeof</span>(<a class="code" href="_connector_8hpp.html#a3a6fc59c5ce532a43ad212428ef5ecd8">sats</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;   <a class="code" href="_connector_8hpp.html#a3a6fc59c5ce532a43ad212428ef5ecd8">sats</a>.bInheritHandle = TRUE;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;   <a class="code" href="_connector_8hpp.html#a3a6fc59c5ce532a43ad212428ef5ecd8">sats</a>.lpSecurityDescriptor = NULL;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;   CreatePipe(&amp;pipout_r, &amp;pipout_w, &amp;<a class="code" href="_connector_8hpp.html#a3a6fc59c5ce532a43ad212428ef5ecd8">sats</a>, 0);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;   CreatePipe(&amp;pipin_r, &amp;<a class="code" href="_connector_8hpp.html#a7a7d1c568f3e9b7f01646119cf8cef9c">pipin_w</a>, &amp;<a class="code" href="_connector_8hpp.html#a3a6fc59c5ce532a43ad212428ef5ecd8">sats</a>, 0);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;   <a class="code" href="_connector_8hpp.html#a59a50c2e184af277902f64aba40a7c52">sti</a>.dwFlags = STARTF_USESHOWWINDOW | STARTF_USESTDHANDLES;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;   <a class="code" href="_connector_8hpp.html#a59a50c2e184af277902f64aba40a7c52">sti</a>.wShowWindow = SW_HIDE;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;   <a class="code" href="_connector_8hpp.html#a59a50c2e184af277902f64aba40a7c52">sti</a>.hStdInput = pipin_r;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;   <a class="code" href="_connector_8hpp.html#a59a50c2e184af277902f64aba40a7c52">sti</a>.hStdOutput = pipout_w;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;   <a class="code" href="_connector_8hpp.html#a59a50c2e184af277902f64aba40a7c52">sti</a>.hStdError = pipout_w;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;   CreateProcess(NULL, path, NULL, NULL, TRUE,0, NULL, NULL, &amp;<a class="code" href="_connector_8hpp.html#a59a50c2e184af277902f64aba40a7c52">sti</a>, &amp;<a class="code" href="_connector_8hpp.html#a9a8e2bf7c56ae454b6a897d683b1d73d">pi</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="_connector_8hpp.html#a979d4820136b3e35778d479aa655c1d1">   90</a></span>&#160;std::string <a class="code" href="_connector_8hpp.html#a979d4820136b3e35778d479aa655c1d1">getNextMove</a>(std::string position)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::string str;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    position = <span class="stringliteral">&quot;position startpos moves &quot;</span>+position+<span class="stringliteral">&quot;\ngo\n&quot;</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    WriteFile(<a class="code" href="_connector_8hpp.html#a7a7d1c568f3e9b7f01646119cf8cef9c">pipin_w</a>, position.c_str(), position.length(),&amp;<a class="code" href="_connector_8hpp.html#a398955523fba86586278d5008f70a1a4">writ</a>, NULL);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    Sleep(500);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    PeekNamedPipe(pipout_r, <a class="code" href="_connector_8hpp.html#a79fade5eb2d432b4f9c207be472bc931">buffer</a>,<span class="keyword">sizeof</span>(<a class="code" href="_connector_8hpp.html#a79fade5eb2d432b4f9c207be472bc931">buffer</a>), &amp;read, &amp;available, NULL);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        ZeroMemory(<a class="code" href="_connector_8hpp.html#a79fade5eb2d432b4f9c207be472bc931">buffer</a>, <span class="keyword">sizeof</span>(<a class="code" href="_connector_8hpp.html#a79fade5eb2d432b4f9c207be472bc931">buffer</a>));</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span>(!ReadFile(pipout_r, <a class="code" href="_connector_8hpp.html#a79fade5eb2d432b4f9c207be472bc931">buffer</a>, <span class="keyword">sizeof</span>(<a class="code" href="_connector_8hpp.html#a79fade5eb2d432b4f9c207be472bc931">buffer</a>), &amp;read, NULL) || !read) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="_connector_8hpp.html#a79fade5eb2d432b4f9c207be472bc931">buffer</a>[read] = 0;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        str+=(<span class="keywordtype">char</span>*)<a class="code" href="_connector_8hpp.html#a79fade5eb2d432b4f9c207be472bc931">buffer</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">while</span>(read &gt;= <span class="keyword">sizeof</span>(<a class="code" href="_connector_8hpp.html#a79fade5eb2d432b4f9c207be472bc931">buffer</a>));</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> n = str.find(<span class="stringliteral">&quot;bestmove&quot;</span>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span> (n!=-1) <span class="keywordflow">return</span> str.substr(n+9,4);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;error&quot;</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="_connector_8hpp.html#a95b99b2dee886d640a2c0f47a0e623ab">  120</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_connector_8hpp.html#a95b99b2dee886d640a2c0f47a0e623ab">CloseConnection</a>()</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    WriteFile(<a class="code" href="_connector_8hpp.html#a7a7d1c568f3e9b7f01646119cf8cef9c">pipin_w</a>, <span class="stringliteral">&quot;quit\n&quot;</span>, 5,&amp;<a class="code" href="_connector_8hpp.html#a398955523fba86586278d5008f70a1a4">writ</a>, NULL);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="_connector_8hpp.html#a7a7d1c568f3e9b7f01646119cf8cef9c">pipin_w</a> != NULL) CloseHandle(<a class="code" href="_connector_8hpp.html#a7a7d1c568f3e9b7f01646119cf8cef9c">pipin_w</a>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span>(pipin_r != NULL) CloseHandle(pipin_r);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">if</span>(pipout_w != NULL) CloseHandle(pipout_w);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span>(pipout_r != NULL) CloseHandle(pipout_r);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="_connector_8hpp.html#a9a8e2bf7c56ae454b6a897d683b1d73d">pi</a>.hProcess != NULL) CloseHandle(<a class="code" href="_connector_8hpp.html#a9a8e2bf7c56ae454b6a897d683b1d73d">pi</a>.hProcess);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="_connector_8hpp.html#a9a8e2bf7c56ae454b6a897d683b1d73d">pi</a>.hThread != NULL) CloseHandle(<a class="code" href="_connector_8hpp.html#a9a8e2bf7c56ae454b6a897d683b1d73d">pi</a>.hThread);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif CONNECTOR_H</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="ttc" id="_connector_8hpp_html_a1555aee1363be575daa7b67c16ec34d3"><div class="ttname"><a href="_connector_8hpp.html#a1555aee1363be575daa7b67c16ec34d3">ConnectToEngine</a></div><div class="ttdeci">void ConnectToEngine(char *path)</div><div class="ttdoc">Polacz sie z silnikiem Procedura umozliwia polaczenie sie z silnikiem odpowiedzialnym za generowanie ...</div><div class="ttdef"><b>Definition:</b> Connector.hpp:63</div></div>
+<div class="ttc" id="_connector_8hpp_html_a979d4820136b3e35778d479aa655c1d1"><div class="ttname"><a href="_connector_8hpp.html#a979d4820136b3e35778d479aa655c1d1">getNextMove</a></div><div class="ttdeci">std::string getNextMove(std::string position)</div><div class="ttdoc">Pobierz ruch Funkcja sprawdza ruchy ktore moze wykonac komputer. </div><div class="ttdef"><b>Definition:</b> Connector.hpp:90</div></div>
+<div class="ttc" id="_connector_8hpp_html_a3a6fc59c5ce532a43ad212428ef5ecd8"><div class="ttname"><a href="_connector_8hpp.html#a3a6fc59c5ce532a43ad212428ef5ecd8">sats</a></div><div class="ttdeci">SECURITY_ATTRIBUTES sats</div><div class="ttdoc">ochrona atrybutow struktura SECURITY_ATTRIBUTES zawiera deskryptor bezpieczenstwa dla obiektu i okres...</div><div class="ttdef"><b>Definition:</b> Connector.hpp:30</div></div>
+<div class="ttc" id="_connector_8hpp_html_a398955523fba86586278d5008f70a1a4"><div class="ttname"><a href="_connector_8hpp.html#a398955523fba86586278d5008f70a1a4">writ</a></div><div class="ttdeci">DWORD writ</div><div class="ttdoc">Dword Deklaracja zmiennych typu DWORD. </div><div class="ttdef"><b>Definition:</b> Connector.hpp:54</div></div>
+<div class="ttc" id="_connector_8hpp_html_a59a50c2e184af277902f64aba40a7c52"><div class="ttname"><a href="_connector_8hpp.html#a59a50c2e184af277902f64aba40a7c52">sti</a></div><div class="ttdeci">STARTUPINFO sti</div><div class="ttdoc">Start up info Okresla stacje okna, pulpit, standardowe uchwyty i wyglad glownego okna procesu w czasi...</div><div class="ttdef"><b>Definition:</b> Connector.hpp:22</div></div>
+<div class="ttc" id="_connector_8hpp_html_a95b99b2dee886d640a2c0f47a0e623ab"><div class="ttname"><a href="_connector_8hpp.html#a95b99b2dee886d640a2c0f47a0e623ab">CloseConnection</a></div><div class="ttdeci">void CloseConnection()</div><div class="ttdoc">Zamknij połączenie Procedura zamyka polaczenie z silnikiem. </div><div class="ttdef"><b>Definition:</b> Connector.hpp:120</div></div>
+<div class="ttc" id="_connector_8hpp_html_a79fade5eb2d432b4f9c207be472bc931"><div class="ttname"><a href="_connector_8hpp.html#a79fade5eb2d432b4f9c207be472bc931">buffer</a></div><div class="ttdeci">BYTE buffer[2048]</div><div class="ttdoc">Byte Deklaracja bufora. </div><div class="ttdef"><b>Definition:</b> Connector.hpp:48</div></div>
+<div class="ttc" id="_connector_8hpp_html_a7a7d1c568f3e9b7f01646119cf8cef9c"><div class="ttname"><a href="_connector_8hpp.html#a7a7d1c568f3e9b7f01646119cf8cef9c">pipin_w</a></div><div class="ttdeci">HANDLE pipin_w</div><div class="ttdoc">Handle Deklaracja uchwytow do obiektu. </div><div class="ttdef"><b>Definition:</b> Connector.hpp:42</div></div>
+<div class="ttc" id="_connector_8hpp_html_a9a8e2bf7c56ae454b6a897d683b1d73d"><div class="ttname"><a href="_connector_8hpp.html#a9a8e2bf7c56ae454b6a897d683b1d73d">pi</a></div><div class="ttdeci">PROCESS_INFORMATION pi</div><div class="ttdoc">Process information Zawiera informacje o nowo utworzonym procesie i jego glownym watku. </div><div class="ttdef"><b>Definition:</b> Connector.hpp:36</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano N, 28 sty 2018 12:21:52 dla Szachy cpp programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

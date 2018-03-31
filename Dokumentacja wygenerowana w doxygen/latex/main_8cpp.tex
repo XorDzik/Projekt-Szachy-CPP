@@ -1,0 +1,45 @@
+\hypertarget{main_8cpp}{\section{Dokumentacja pliku C\+:/\+Users/\+Piotrek/\+Desktop/\+Szachy cpp/main.cpp}
+\label{main_8cpp}\index{C\+:/\+Users/\+Piotrek/\+Desktop/\+Szachy cpp/main.\+cpp@{C\+:/\+Users/\+Piotrek/\+Desktop/\+Szachy cpp/main.\+cpp}}
+}
+
+
+Funkcja głowna.  
+
+
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}Klasy.\+hpp\char`\"{}}\\*
+\subsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{main_8cpp_a34e819be6bb222b369578bb037bb3564}{\#define {\bfseries M\+A\+X\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+I\+T\+E\+M\+S}~12}\label{main_8cpp_a34e819be6bb222b369578bb037bb3564}
+
+\end{DoxyCompactItemize}
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\begin{DoxyCompactList}\small\item\em Funkcja głowna Funkcja tworzy obiekt typu gra, okno o nazwie menu glowne oraz obiekt typu texture za pomocą ktorego laduje obrazek z folderu images, nastepnie do obiektu typu Sprite przekazywany jest ten obrazek poprzez obiekt t1 jako parametr. Nastepnie tworzony jest obiekt typu \hyperlink{class_menu}{Menu} o nazwie menu do ktorego sa przekazywane dwa parametry oznaczajace wysokosc i szerokosc wygenerowanego okna. Petla while bedzie sie wykonywac tak dlugo dopoki okno bedzie otwarte. Wewnatrz ma miejsce deklaracja obiektu typu Event o nazwie event, ktory słuzy do obslugi zdarzen. Nastepnie za pomocą instrukcji switch sprawdzane jest czy uzytkownik nacisnal przycisk gora czy dol. Jezeli nacisnal odpowiednio ktorys z tych przyciskow to wywolywane sa metody o nazwach ruch\+\_\+gora() lub ruch\+\_\+dol(), co umozliwia przemieszczanie sie po utworzonym menu. Nastepnie mamy kolejną instrukcje switch sprawdzajaca czy klawisz zostal wcisniety za pomoca wywolania metody klawisz\+\_\+zostal\+\_\+wcisniety() z klasy menu. Teraz w zaleznosci od tego ktora opcje w menu wybral uzytkownik zostanie uruchomiona gra, instrukcja poruszania sie bierek, lub gra zostanie zamknieta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Funkcja głowna. 
+
+Plik zawiera fukcję głowna programu 
+
+\subsection{Dokumentacja funkcji}
+\hypertarget{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}
+
+
+Funkcja głowna Funkcja tworzy obiekt typu gra, okno o nazwie menu glowne oraz obiekt typu texture za pomocą ktorego laduje obrazek z folderu images, nastepnie do obiektu typu Sprite przekazywany jest ten obrazek poprzez obiekt t1 jako parametr. Nastepnie tworzony jest obiekt typu \hyperlink{class_menu}{Menu} o nazwie menu do ktorego sa przekazywane dwa parametry oznaczajace wysokosc i szerokosc wygenerowanego okna. Petla while bedzie sie wykonywac tak dlugo dopoki okno bedzie otwarte. Wewnatrz ma miejsce deklaracja obiektu typu Event o nazwie event, ktory słuzy do obslugi zdarzen. Nastepnie za pomocą instrukcji switch sprawdzane jest czy uzytkownik nacisnal przycisk gora czy dol. Jezeli nacisnal odpowiednio ktorys z tych przyciskow to wywolywane sa metody o nazwach ruch\+\_\+gora() lub ruch\+\_\+dol(), co umozliwia przemieszczanie sie po utworzonym menu. Nastepnie mamy kolejną instrukcje switch sprawdzajaca czy klawisz zostal wcisniety za pomoca wywolania metody klawisz\+\_\+zostal\+\_\+wcisniety() z klasy menu. Teraz w zaleznosci od tego ktora opcje w menu wybral uzytkownik zostanie uruchomiona gra, instrukcja poruszania sie bierek, lub gra zostanie zamknieta. 
+
+\begin{DoxyReturn}{Zwraca}
+Funkcja niczego nie zwraca 
+\end{DoxyReturn}
